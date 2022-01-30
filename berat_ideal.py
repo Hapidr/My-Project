@@ -14,12 +14,12 @@ print('''
 >30 = Obesitas
 ''')
 ideal = rumus(berat, tinggi)
-print(f"Nilai untuk Berat Badan Anda {rumus(berat, tinggi):.2f}")
+print(f"Nilai untuk Berat Badan Anda adalah {rumus(berat, tinggi):.2f}")
 if ideal < 18.5:
-    print("Berat Badan Anda kurang proporsional")
+    print(f"{ideal:.2f}: Berat Badan Anda kurang proporsional")
 elif ideal >= 18.5 and ideal <= 22.9:
-    print("Berat Badan Anda normal")
+    print(f"{ideal:.2f}: Berat Badan Anda Normal/Proporsional")
 elif ideal >= 23 and ideal <= 29.9:
-    print("Berat Badan Anda berlebih (Berpotensi Obesitas)")
+    print(f"{ideal:.2f}: Berat Badan Anda berlebih (Berpotensi Obesitas)")
 elif ideal >= 30:
-    print("Anda Obesitas")
+    print(f"{ideal:.2f}: Anda Obesitas")
