@@ -12,7 +12,11 @@ def angka():
 
     masuk = input("masukkan kata: ")
     val = list(masuk.upper())
+    app = []
     for i in val:
-        print(alpha[i], end="")
+        app.append(alpha[i])
+    for i in app:
+        print(i, end=" ")
 
 angka()
+
