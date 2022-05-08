@@ -13,6 +13,11 @@ while True:
         elif player.lower() == com.lower(): print("Seri!")
         else: print("Anda Kalah")
 
-    play = input("\nIngin main lagi?\nYa atau Tidak: ")
-    if play.lower() == "tidak": print("Terima kasih sudah bermain!"), exit()
-    elif play.lower() != "ya": print("Masukkan pilihan yang sesuai!"), exit()
+    a = 1
+    while a == 1:
+        play = input("\nIngin main lagi?\nYa atau Tidak: ")
+        if play.lower() == "tidak": print("Terima kasih sudah bermain!"), exit()
+        elif play.lower() == "ya": 
+            a = 2
+        else:
+            print("Masukkan pilihan yang sesuai!")
